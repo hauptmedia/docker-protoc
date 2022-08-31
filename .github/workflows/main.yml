@@ -31,7 +31,7 @@ jobs:
           platforms: linux/amd64,linux/arm64
           file: ./Dockerfile
           push: true
-          tags: latest
+          tags: hauptmedia/protoc:latest
 
       - name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
